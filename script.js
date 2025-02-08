@@ -15,13 +15,19 @@ let messageIndex = 0;
 let noAlready = false;
 const noButton = document.querySelector('.no-button');
 const yesButton = document.querySelector('.yes-button');
+const textTitle = document.querySelector('.text-title');
+const img = document.querySelector('.bg');
 
 function handleNoClick() {
   if(noAlready == true) {
     window.location.href = "yes_page.html";
   }
   else {
+    img.src = "https://media.giphy.com/media/dJYoOVAWf2QkU/giphy.gif?cid=ecf05e47evv6gvf2qaacnn1ibygcukaqezqbvyk82u3lgtvp&ep=v1_gifs_related&rid=giphy.gif&ct=g";
+    yesButton.style.display = "none";
+    noButton.style.fontSize = '1.5em';
     noButton.textContent = "Okay";
+    textTitle.textContent = "Harus mau dong pookie 😢";
     noAlready = true;
   }
 }

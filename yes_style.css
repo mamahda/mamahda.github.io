@@ -25,10 +25,11 @@ body {
 .header_text {
   font-size: 3em;
   color: #ffffff;
+  padding: 20px;
 }
 
 .gif_container img {
-  width: 100%; 
+  width: 80%; 
   max-width: 500px; 
   height: auto; 
 }
